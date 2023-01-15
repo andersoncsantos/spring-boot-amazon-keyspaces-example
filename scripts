@@ -1,0 +1,4 @@
+CREATE KEYSPACE mykeyspace
+WITH replication = {'class':'SimpleStrategy', 'replication_factor':3};
+
+CREATE TABLE Product(id int PRIMARY KEY, name text);
